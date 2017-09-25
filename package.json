@@ -1,0 +1,19 @@
+{
+  "name": "ksusha-node-test-task",
+  "version": "1.0.0",
+  "description": "test task",
+  "main": "index.js",
+  "scripts": {
+    "start": "node backend"
+  },
+  "author": "oregusenpai@gmail.com",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^1.0.3",
+    "body-parser": "^1.18.1",
+    "cookie-parser": "^1.4.3",
+    "ejs": "^2.5.7",
+    "express": "^4.15.4",
+    "jsonwebtoken": "^8.0.1"
+  }
+}

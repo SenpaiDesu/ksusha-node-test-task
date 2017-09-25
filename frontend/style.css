@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #000;
+  font-family: 'Open Sans';
+  font-size: 16px;
+  color: #ddd;
+}
+
+.wrap {
+  width: 300px;
+  margin: 300px auto;
+  padding: 1em;
+  background: #111;
+  border-radius: 2px;
+}
+
+.wrap.add-task, .wrap.task-list {
+  margin: 50px auto;
+}
+
+.wrap.add-task {
+  width: 400px;
+}
+
+.wrap.task-list {
+  width: 600px;
+}
+
+.item {
+  display: flex;
+  border-top: 1px solid #444;
+}
+
+.item textarea {
+  flex-grow: 3;
+}
+
+.item .desc {
+  flex-grow: 2;
+}
+
+.item .desc p {
+  line-height: 2.2em;
+  padding: 1em;
+}
+
+.item .desc p:nth-child(even) {
+  background: #282828;
+}
+
+input, textarea, button {
+  display: block;
+  width: 100%;
+  font-size: 1em;
+  margin-top: 1em;
+  color: #ddd;
+  border-radius: 2px;
+}
+
+input, textarea {
+  background: #202020;
+  padding-left: 0.5em;
+  line-height: 1.8em;
+  border: 1px solid #444;
+}
+
+button {
+  background: #ee0000;
+  line-height: 2em;
+  cursor: pointer;
+}
+
+h2 {
+  display: block;
+  font-size: 1.2em;
+  text-align: center;
+  color: #ddd;
+}
+
+span {
+  display: block;
+  margin-top: 1em;
+  padding: 0.5em;
+  background: #aa5555;
+  text-align: center;
+  opacity: 0.8;
+}
+
+span#error {
+  color: #ee0000;
+  background: #aa5555;
+}
+
+span#message {
+  color: #00aa22;
+}
+
+nav {
+  width: 400px;
+  display: flex;
+  margin: 200px auto 0 auto;
+  border-bottom: 1px solid #ddd;
+}
+
+a {
+  display: block;
+  text-decoration: none;
+  color: #ddd;
+  line-height: 3em;
+  text-align: center;
+}
+
+nav a {
+  flex: 1 0 50px;
+}
+
+nav a:hover {
+  background: #202020;
+}
+
+nav a.active {
+  color: #ee0000;
+}
+
+.big-error {
+  font-size: 10em;
+  color: #ee0000;
+  font-weight: bold;
+}

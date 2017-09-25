@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<% include partials/meta.ejs %>
+<body>
+  <nav>
+    <a href="/addtask">Add task</a>
+    <a href="/completed" class='active'>Completed tasks</a>
+  </nav>
+  <div class='wrap task-list'>
+    <h2>Hi there, <%= username %> =) </br> On this page, you can see completed tasks</h2>
+    <% tasks.map((item, index) => { %>
+      <div class='item'>
+        <textarea name="task" rows="10"><%= item.task %></textarea>
+        <div class='desc'>
+          <p>User ID: <%= item.userId %></p>
+          <p>PID: <%= item.pid %></p>
+          <p>Result: <%= item.result %></p>
+          <p>Created at: <%= item.createdAt %></p>
+        </div>
+      </div>
+    <% }) %>
+  </div>
+  <script src='/js/main.js'></script>
+</body>
+</html>

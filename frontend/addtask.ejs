@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<% include partials/meta.ejs %>
+<body>
+  <nav>
+    <a href="/addtask" class='active'>Add task</a>
+    <a href="/completed">Completed tasks</a>
+  </nav>
+  <div class='wrap add-task'>
+    <h2>Hi there, <%= username %> =) </br> On this page, you can add new task</h2>
+    <textarea 
+      name="task" rows="10"
+      placeholder="function sum(x,y){ return x + y; } sum(3,5)">
+    </textarea>
+    <button onClick='onSendTask()'>Add task</button>
+    <span id='message'></span>
+  </div>
+  <script src='/js/main.js'></script>
+</body>
+</html>
